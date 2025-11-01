@@ -242,10 +242,97 @@
       opacity: 1;
       visibility: visible;
     }
+
+    
     .scroll-top:hover {
       background-color: #222;
       transform: scale(1.05);
     }
+
+    /* ===== RESPONSIVE FIX ===== */
+@media (max-width: 768px) {
+
+  header {
+    height: 80vh;
+    padding: 0 10px;
+  }
+
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  header p {
+    font-size: 1em;
+    padding: 8px 14px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  /* --- Galería adaptable --- */
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+  }
+
+  .gallery img {
+    height: 180px;
+    border-radius: 8px;
+  }
+
+  /* --- Características del proyecto --- */
+  #detalles .features {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  #detalles .features .columna p {
+    font-size: 0.95em;
+  }
+
+  /* --- Contacto --- */
+  .contact-container {
+    padding: 35px 20px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  /* --- Mapa --- */
+  iframe {
+    height: 300px;
+  }
+
+  /* --- Botones flotantes --- */
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .scroll-top {
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  header p {
+    font-size: 0.9em;
+  }
+  .gallery img {
+    height: 150px;
+  }
+}
+
   </style>
 </head>
 
@@ -530,4 +617,5 @@
 </body>
 
 </html>
+
 
